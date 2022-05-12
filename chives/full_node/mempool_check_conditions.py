@@ -1,6 +1,6 @@
 import logging
 from typing import Dict, Optional
-from chives_rs import MEMPOOL_MODE, COND_CANON_INTS, NO_NEG_DIV, STRICT_ARGS_COUNT
+from chia_rs import MEMPOOL_MODE, COND_CANON_INTS, NO_NEG_DIV, STRICT_ARGS_COUNT
 
 from chives.consensus.default_constants import DEFAULT_CONSTANTS
 from chives.consensus.cost_calculator import NPCResult

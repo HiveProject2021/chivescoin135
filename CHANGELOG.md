@@ -65,7 +65,7 @@ There is a known issue where harvesters will not reconnect to the farmer automat
 - Consolidated socket library to aiohttp and removed websockets dependency
 - During node startup, missing blocks in the DB will throw an exception
 - Updated cryptography to 36.0.2
-- The rust implementation of CLVM is now called `chives_rs` instead of `clvm_rs`.
+- The rust implementation of CLVM is now called `chia_rs` instead of `clvm_rs`.
 - Updated code to use improved rust interface `run_generator2`
 - Code improvements to prefer connecting to a local trusted node over untrusted nodes
 

@@ -42,7 +42,7 @@ from typing import List, Tuple, Dict
 
 import click
 
-from chives_rs import COND_CANON_INTS, NO_NEG_DIV
+from chia_rs import COND_CANON_INTS, NO_NEG_DIV
 
 from chives.consensus.constants import ConsensusConstants
 from chives.consensus.default_constants import DEFAULT_CONSTANTS
