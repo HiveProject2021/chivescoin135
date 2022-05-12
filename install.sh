@@ -54,7 +54,6 @@ if [ "$(uname -m)" = "armv7l" ]; then
   exit 1
 fi
 # Get submodules
-git submodule update --init mozilla-ca
 
 UBUNTU_PRE_2004=0
 UBUNTU_2000=0
