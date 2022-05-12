@@ -5,7 +5,7 @@ from clvm import SExp
 from clvm.casts import int_from_bytes
 from clvm.EvalError import EvalError
 from clvm.serialize import sexp_from_stream, sexp_to_stream
-from chia_rs import MEMPOOL_MODE, run_chives_program, serialized_length, run_generator
+from chia_rs import MEMPOOL_MODE, run_chia_program, serialized_length, run_generator
 from clvm_tools.curry import curry, uncurry
 
 from chives.types.blockchain_format.sized_bytes import bytes32
@@ -81,7 +81,7 @@ class Program(SExp):
 
     def run_with_cost(self, max_cost: int, args) -> Tuple[int, "Program"]:
         prog_args = Program.to(args)
-        cost, r = run_chives_program(self.as_bin(), prog_args.as_bin(), max_cost, 0)
+        cost, r = run_chia_program(self.as_bin(), prog_args.as_bin(), max_cost, 0)
         return cost, Program.to(r)
 
     def run(self, args) -> "Program":
@@ -279,7 +279,7 @@ class SerializedProgram:
         else:
             serialized_args += _serialize(args[0])
 
-        cost, ret = run_chives_program(
+        cost, ret = run_chia_program(
             self._buf,
             serialized_args,
             max_cost,
