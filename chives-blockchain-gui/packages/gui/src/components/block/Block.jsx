@@ -246,7 +246,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.chivesexplorer.com/blockchain/puzzlehash/${blockRecord.farmerPuzzleHash}`}
+          href={`https://explorer.chivescoin.org/addressview.php?goback=block&hash=${blockRecord.farmer_puzzle_hash}`}
         >
           {currencyCode
             ? toBech32m(
@@ -262,7 +262,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.chivesexplorer.com/blockchain/puzzlehash/${blockRecord.poolPuzzleHash}`}
+          href={`https://explorer.chivescoin.org/addressview.php?goback=block&hash=${blockRecord.pool_puzzle_hash}`}
         >
           {currencyCode
             ? toBech32m(
