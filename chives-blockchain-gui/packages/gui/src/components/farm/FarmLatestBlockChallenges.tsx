@@ -61,7 +61,7 @@ export default function FarmLatestBlockChallenges() {
           *Want to explore Chives’s blocks further? Check out{' '}
           <Link
             color="primary"
-            href="https://www.chivesexplorer.com/"
+            href="https://explorer.chivescoin.org/"
             target="_blank"
           >
             Chives Explorer

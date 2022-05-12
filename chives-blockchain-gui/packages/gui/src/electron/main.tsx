@@ -549,18 +549,6 @@ if (!handleSquirrelEvent()) {
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Youtube' }),
-            click: () => {
-              openExternal('https://www.youtube.com/c/ChivesCoinOfficial');
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Instagram' }),
-            click: () => {
-              openExternal('https://www.instagram.com/chivescoinofficial/');
-            },
-          },
-          {
             label: i18n._(/* i18n */ { id: 'Lbank Exchange' }),
             click: () => {
               openExternal('https://lbank.info/exchange/xcc/usdt');

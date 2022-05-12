@@ -238,7 +238,7 @@ function OfferDetails(props: OfferDetailsProps) {
             interactive
           >
             <Link
-              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chivesexplorer.com/blockchain/coin/${coin.parentCoinInfo}`)}
+              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://explorer.chivescoin.org/coinnameview.php?goback=block&coinname=${coin.parentCoinInfo}`)}
             >
               {coin.parentCoinInfo}
             </Link>
@@ -261,7 +261,7 @@ function OfferDetails(props: OfferDetailsProps) {
             interactive
           >
             <Link
-              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chivesexplorer.com/blockchain/puzzlehash/${coin.puzzleHash}`)}
+              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://explorer.chivescoin.org/addressview.php?goback=block&puzzle_hash=${coin.puzzleHash}`)}
             >
               {coin.puzzleHash}
             </Link>
