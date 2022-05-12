@@ -13,7 +13,7 @@ const display: {
   [key in Unit]: Display;
 } = {
   chives: {
-    format: '{amount} XCH',
+    format: '{amount} XCC',
     fractionDigits: 12,
   },
   mojo: {

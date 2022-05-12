@@ -265,7 +265,7 @@ async def make_offer(args: dict, wallet_client: WalletRpcClient, fingerprint: in
         for item in [*offers, *requests]:
             wallet_id, amount = tuple(item.split(":")[0:2])
             if int(wallet_id) == 1:
-                name: str = "XCH"
+                name: str = "XCC"
                 unit: int = units["chives"]
             else:
                 name = await wallet_client.get_cat_name(wallet_id)
@@ -316,7 +316,7 @@ async def print_offer_summary(cat_name_resolver: CATNameResolver, sum_dict: Dict
         unit: int = units["chives"]
         wid: str = "1" if asset_id == "xch" else ""
         mojo_amount: int = int(Decimal(amount))
-        name: str = "XCH"
+        name: str = "XCC"
         if asset_id != "xch":
             name = asset_id
             if asset_id == "unknown":

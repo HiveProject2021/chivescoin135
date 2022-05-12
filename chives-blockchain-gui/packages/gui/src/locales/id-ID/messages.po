@@ -1009,7 +1009,7 @@ msgid "Fee"
 msgstr "Biaya"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCH)"
+#~ msgid "Fee (TXCC)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1251,16 +1251,16 @@ msgid "Join a Pool"
 msgstr "Gabung ke Pool"
 
 #: src/components/plot/add/PlotAddNFT.tsx:49
-msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile."
-msgstr "Gabung ke pool untuk mendapatkan hasil XCH parming yang konsisten. Rata rata penghasilan menyerupai, tapi lebih terduga."
+msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile."
+msgstr "Gabung ke pool untuk mendapatkan hasil XCC parming yang konsisten. Rata rata penghasilan menyerupai, tapi lebih terduga."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:63
-msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-msgstr "Gabung ke pool untuk mendapatkan hasil XCH parming yang konsisten. Rata rata penghasilan menyerupai, tapi lebih terduga. Tunjuk plot ke plot NFT. Anda dapat dengan mudah berpindah pool tanpa harus membuat ulang plot."
+msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+msgstr "Gabung ke pool untuk mendapatkan hasil XCC parming yang konsisten. Rata rata penghasilan menyerupai, tapi lebih terduga. Tunjuk plot ke plot NFT. Anda dapat dengan mudah berpindah pool tanpa harus membuat ulang plot."
 
 #: src/components/plot/add/PlotAddNFT.tsx:138
-msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
-msgstr "Gabung ke pool untuk mendapatkan hasil XCH parming yang konsisten. Buat sebuah plot NFT dan tempatkan plot anda ke sebuah group."
+msgid "Join a pool and get more consistent XCC farming rewards. Create a plot NFT and assign your new plots to a group."
+msgstr "Gabung ke pool untuk mendapatkan hasil XCC parming yang konsisten. Buat sebuah plot NFT dan tempatkan plot anda ke sebuah group."
 
 #: src/components/app/AppSelectMode.tsx:146
 msgid "Join farming pools"
@@ -1576,8 +1576,8 @@ msgstr "Tidak terhubung"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
 #: src/components/farm/FarmManageFarmingRewards.tsx:174
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCH reward for pooling plots."
-msgstr "Mohon di ingat ini tidak akan merubah alamat pembayaran pool. Ini hanya mempengaruhi plot format lama, dan 0.25XCH penghasilan dari memasukan plot ke pool."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the reward for pooling plots."
+msgstr "Mohon di ingat ini tidak akan merubah alamat pembayaran pool. Ini hanya mempengaruhi plot format lama, dan penghasilan dari memasukan plot ke pool."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
 #: src/components/plotNFT/PlotNFTCard.tsx:158
@@ -2364,7 +2364,7 @@ msgid "Self Pooling"
 msgstr ""
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:104
-msgid "Self pool. When you win a block you will earn XCH rewards."
+msgid "Self pool. When you win a block you will earn XCC rewards."
 msgstr ""
 
 #: src/components/trading/CreateOffer.jsx:165
@@ -2446,7 +2446,7 @@ msgid "Skips adding a final directory to harvester for farming"
 msgstr "Lewati saja penambahan sebuah direktori akhir ke harvester unuk farming"
 
 #: src/components/pool/PoolHero.tsx:21
-msgid "Smooth out your XCH farming rewards by joining a pool."
+msgid "Smooth out your XCC farming rewards by joining a pool."
 msgstr ""
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
@@ -2527,7 +2527,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/app/AppSelectMode.tsx:89
-msgid "Store and Send XCH"
+msgid "Store and Send XCC"
 msgstr ""
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:103
@@ -2569,23 +2569,23 @@ msgstr "Sinkronisasi <0/>/<1/>"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCH Block Rewards"
+#~ msgid "TXCC Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCH Farming Rewards"
+#~ msgid "TXCC Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCH Fees Collected"
+#~ msgid "TXCC Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCH User Fees"
-#~ msgstr "TXCH User Fees"
+#~ msgid "TXCC User Fees"
+#~ msgstr "TXCC User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCH User Transaction Fees"
+#~ msgid "TXCC User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2672,8 +2672,8 @@ msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Total dari biaya transaksi pada block ini. Diberikan kepada farmer."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:106
-msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCH address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-msgstr "Ini adalah instruksi bagaimana farmer ingin di bayar. Secara bawaan ini akan dibayarkan ke alamat XCH, tetapi bisa di set ke string dengan ukuran kurang dari 1024 karakter, bisa me representasi kan blockchain lain atau indentifiksi sistem pembayaran."
+msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCC address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+msgstr "Ini adalah instruksi bagaimana farmer ingin di bayar. Secara bawaan ini akan dibayarkan ke alamat XCC, tetapi bisa di set ke string dengan ukuran kurang dari 1024 karakter, bisa me representasi kan blockchain lain atau indentifiksi sistem pembayaran."
 
 #: src/components/plot/card/PlotCardPlotsFailedToOpen.tsx:15
 msgid "These plots are invalid, you might want to delete them."

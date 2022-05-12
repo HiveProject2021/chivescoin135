@@ -86,7 +86,7 @@ export default function AppSelectMode() {
                     <Flex gap={1} alignItems="center">
                       <StyledCheckIcon color="primary" />
                       <Typography variant="body2">
-                        <Trans>Store and Send XCH</Trans>
+                        <Trans>Store and Send XCC</Trans>
                       </Typography>
                     </Flex>
                     <Flex gap={1} alignItems="center">

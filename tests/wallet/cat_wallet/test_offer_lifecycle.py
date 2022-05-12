@@ -38,7 +38,7 @@ def str_to_cat_hash(tail_str: str) -> bytes32:
     return construct_cat_puzzle(CAT_MOD, str_to_tail_hash(tail_str), acs).get_tree_hash()
 
 
-# This method takes a dictionary of strings mapping to amounts and generates the appropriate CAT/XCH coins
+# This method takes a dictionary of strings mapping to amounts and generates the appropriate CAT/XCC coins
 async def generate_coins(
     sim,
     sim_client,
@@ -178,7 +178,7 @@ class TestOfferLifecycle:
             red_coins: List[Coin] = all_coins["red"]
             blue_coins: List[Coin] = all_coins["blue"]
 
-            # Create an XCH Offer for RED
+            # Create an XCC Offer for RED
             chives_requested_payments: Dict[Optional[bytes32], List[Payment]] = {
                 str_to_tail_hash("red"): [
                     Payment(acs_ph, 100, [b"memo"]),
@@ -194,7 +194,7 @@ class TestOfferLifecycle:
             chives_offer = Offer(chives_requested_payments, chives_secured_bundle)
             assert not chives_offer.is_valid()
 
-            # Create a RED Offer for XCH
+            # Create a RED Offer for XCC
             red_requested_payments: Dict[Optional[bytes32], List[Payment]] = {
                 None: [
                     Payment(acs_ph, 300, [b"red memo"]),
@@ -216,7 +216,7 @@ class TestOfferLifecycle:
             assert new_offer.get_requested_amounts() == {None: 700, str_to_tail_hash("red"): 300}
             assert new_offer.is_valid()
 
-            # Create yet another offer of BLUE for XCH and RED
+            # Create yet another offer of BLUE for XCC and RED
             blue_requested_payments: Dict[Optional[bytes32], List[Payment]] = {
                 None: [
                     Payment(acs_ph, 200, [b"blue memo"]),

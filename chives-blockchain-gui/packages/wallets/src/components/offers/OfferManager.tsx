@@ -510,7 +510,7 @@ export function OfferManager() {
               <Offers color="primary" fontSize="extraLarge" />
               <Typography variant="body1">
                 <Trans>
-                  Create an offer to exchange XCH or other tokens. View an offer to inspect and accept an offer made by another party.
+                  Create an offer to exchange XCC or other tokens. View an offer to inspect and accept an offer made by another party.
                 </Trans>
               </Typography>
               <Flex gap={1}>

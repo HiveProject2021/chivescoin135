@@ -62,7 +62,7 @@ export default function Amount(props: AmountProps) {
   const correctedValue = value && value[0] === '.' ? `0${value}` : value;
 
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
-  const isChivesCurrency = ['XCH', 'TXCH'].includes(currencyCode);
+  const isChivesCurrency = ['XCC', 'TXCC'].includes(currencyCode);
   const mojo = isChivesCurrency
     ? chivesToMojo(correctedValue)
     : catToMojo(correctedValue);

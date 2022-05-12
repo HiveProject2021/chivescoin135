@@ -55,7 +55,7 @@ class Offer:
 
     @staticmethod
     def notarize_payments(
-        requested_payments: Dict[Optional[bytes32], List[Payment]],  # `None` means you are requesting XCH
+        requested_payments: Dict[Optional[bytes32], List[Payment]],  # `None` means you are requesting XCC
         coins: List[Coin],
     ) -> Dict[Optional[bytes32], List[NotarizedPayment]]:
         # This sort should be reproducible in CLVM with `>s`

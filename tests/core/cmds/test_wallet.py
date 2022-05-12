@@ -29,7 +29,7 @@ async def test_print_offer_summary_xch(capsys: Any) -> None:
 
     captured = capsys.readouterr()
 
-    assert "XCH (Wallet ID: 1): 1.0 (1000000000000 mojos)" in captured.out
+    assert "XCC (Wallet ID: 1): 1.0 (1000000000000 mojos)" in captured.out
 
 
 @pytest.mark.asyncio
@@ -73,7 +73,7 @@ async def test_print_offer_summary_xch_and_cats(capsys: Any) -> None:
 
     captured = capsys.readouterr()
 
-    assert "XCH (Wallet ID: 1): 2.5 (2500000000000 mojos)" in captured.out
+    assert "XCC (Wallet ID: 1): 2.5 (2500000000000 mojos)" in captured.out
     assert "DuckSauce (Wallet ID: 2): 1.111 (1111 mojos)" in captured.out
     assert "CrunchBerries (Wallet ID: 3): 2.222 (2222 mojos)" in captured.out
     assert "UnicornTears (Wallet ID: 4): 3.333 (3333 mojos)" in captured.out
@@ -92,7 +92,7 @@ async def test_print_offer_summary_xch_and_cats_with_zero_values(capsys: Any) ->
 
     captured = capsys.readouterr()
 
-    assert "XCH (Wallet ID: 1): 0.0 (0 mojos)" in captured.out
+    assert "XCC (Wallet ID: 1): 0.0 (0 mojos)" in captured.out
     assert "DuckSauce (Wallet ID: 2): 0.0 (0 mojos)" in captured.out
     assert "CrunchBerries (Wallet ID: 3): 0.0 (0 mojos)" in captured.out
     assert "UnicornTears (Wallet ID: 4): 0.0 (0 mojos)" in captured.out
@@ -121,4 +121,4 @@ async def test_print_offer_summary_xch_with_one_mojo(capsys: Any) -> None:
 
     captured = capsys.readouterr()
 
-    assert "XCH (Wallet ID: 1): 1e-12 (1 mojo)" in captured.out
+    assert "XCC (Wallet ID: 1): 1e-12 (1 mojo)" in captured.out

@@ -59,7 +59,7 @@ function buildAssetSelectorList(
 
     if (wallet.type === WalletType.STANDARD_WALLET) {
       name = 'Chives';
-      symbol = 'XCH';
+      symbol = 'XCC';
     }
     else if (wallet.type === WalletType.CAT) {
       name = wallet.name;
