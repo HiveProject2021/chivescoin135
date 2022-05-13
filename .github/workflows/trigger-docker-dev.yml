@@ -1,7 +1,8 @@
 name: Trigger Dev Docker Build
 
 on:
-  pull_request:
+  workflow_dispatch:
+  # pull_request:
 
 concurrency:
   # SHA is added to the end if on `main` to let all main workflows run
@@ -10,7 +11,7 @@ concurrency:
 
 jobs:
   trigger:
-    name: Trigger building a new dev tag for the chives-docker image
+    name: Trigger building a new dev tag for the chia-docker image
     runs-on: ubuntu-latest
     steps:
       - name: Test for secrets access

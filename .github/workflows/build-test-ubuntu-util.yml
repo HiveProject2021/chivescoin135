@@ -1,17 +1,18 @@
 #
-# THIS FILE IS GENERATED. SEE https://github.com/HiveProject2021/chives-blockchain/tree/main/tests#readme
+# THIS FILE IS GENERATED. SEE https://github.com/Chia-Network/chia-blockchain/tree/main/tests#readme
 #
 name: Ubuntu util Test
 
 on:
-  push:
-    branches:
-      - main
-    tags:
-        - '**'
-  pull_request:
-    branches:
-      - '**'
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  #   tags:
+  #       - '**'
+  # pull_request:
+  #   branches:
+  #     - '**'
 
 concurrency:
   # SHA is added to the end if on `main` to let all main workflows run
@@ -65,7 +66,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
 
-# Omitted checking out blocks and plots repo Chives-Network/test-cache
+# Omitted checking out blocks and plots repo Chia-Network/test-cache
 
     - name: Run install script
       env:
@@ -99,5 +100,5 @@ jobs:
 # Omitted resource usage check
 
 #
-# THIS FILE IS GENERATED. SEE https://github.com/HiveProject2021/chives-blockchain/tree/main/tests#readme
+# THIS FILE IS GENERATED. SEE https://github.com/Chia-Network/chia-blockchain/tree/main/tests#readme
 #

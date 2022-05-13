@@ -2,14 +2,9 @@ name: Build Installer - Windows 10
 
 on:
   push:
-    branches:
-      - main
-      - 'release/**'
     tags:
         - '**'
-  pull_request:
-    branches:
-      - '**'
+  workflow_dispatch:
 
 concurrency:
   # SHA is added to the end if on `main` to let all main workflows run
@@ -105,7 +100,7 @@ jobs:
         echo "::set-output name=CHIVES_INSTALLER_VERSION::$env:CHIVES_INSTALLER_VERSION"
         deactivate
 
-      # Get the most recent release from chives-plotter-madmax
+      # Get the most recent release from chia-plotter-madmax
     - uses: actions/github-script@v6
       id: 'latest-madmax'
       with:
@@ -113,16 +108,16 @@ jobs:
         result-encoding: string
         script: |
           const release = await github.rest.repos.getLatestRelease({
-            owner: 'Chives-Network',
-            repo: 'chives-plotter-madmax',
+            owner: 'Chia-Network',
+            repo: 'chia-plotter-madmax',
           });
           return release.data.tag_name;
 
     - name: Get latest madmax plotter
       run: |
         mkdir "$env:GITHUB_WORKSPACE\madmax"
-        Invoke-WebRequest https://github.com/HiveProject2021/chives-plotter-madmax/releases/download/${{ steps.latest-madmax.outputs.result }}/chives_plot-${{ steps.latest-madmax.outputs.result }}.exe -OutFile "$env:GITHUB_WORKSPACE\madmax\chives_plot.exe"
-        Invoke-WebRequest https://github.com/HiveProject2021/chives-plotter-madmax/releases/download/${{ steps.latest-madmax.outputs.result }}/chives_plot_k34-${{ steps.latest-madmax.outputs.result }}.exe -OutFile "$env:GITHUB_WORKSPACE\madmax\chives_plot_k34.exe"
+        Invoke-WebRequest https://github.com/Chia-Network/chia-plotter-madmax/releases/download/${{ steps.latest-madmax.outputs.result }}/chia_plot-${{ steps.latest-madmax.outputs.result }}.exe -OutFile "$env:GITHUB_WORKSPACE\madmax\chia_plot.exe"
+        Invoke-WebRequest https://github.com/Chia-Network/chia-plotter-madmax/releases/download/${{ steps.latest-madmax.outputs.result }}/chia_plot_k34-${{ steps.latest-madmax.outputs.result }}.exe -OutFile "$env:GITHUB_WORKSPACE\madmax\chia_plot_k34.exe"
 
       # Get the most recent release from bladebit
     - uses: actions/github-script@v6
@@ -132,7 +127,7 @@ jobs:
         result-encoding: string
         script: |
           const release = await github.rest.repos.getLatestRelease({
-            owner: 'Chives-Network',
+            owner: 'Chia-Network',
             repo: 'bladebit',
           });
           return release.data.tag_name;
@@ -140,7 +135,7 @@ jobs:
     - name: Get latest bladebit plotter
       run: |
         mkdir "$env:GITHUB_WORKSPACE\bladebit"
-        Invoke-WebRequest https://github.com/HiveProject2021/bladebit/releases/download/${{ steps.latest-bladebit.outputs.result }}/bladebit-${{ steps.latest-bladebit.outputs.result }}-windows-x86-64.zip -OutFile "$env:GITHUB_WORKSPACE\bladebit\bladebit.zip"
+        Invoke-WebRequest https://github.com/Chia-Network/bladebit/releases/download/${{ steps.latest-bladebit.outputs.result }}/bladebit-${{ steps.latest-bladebit.outputs.result }}-windows-x86-64.zip -OutFile "$env:GITHUB_WORKSPACE\bladebit\bladebit.zip"
         Expand-Archive -Path "$env:GITHUB_WORKSPACE\bladebit\bladebit.zip" -DestinationPath "$env:GITHUB_WORKSPACE\bladebit\"
         rm "$env:GITHUB_WORKSPACE\bladebit\bladebit.zip"
 

@@ -2,14 +2,9 @@ name: Build Installer - Linux DEB ARM64
 
 on:
   push:
-    branches:
-      - main
-      - 'release/**'
     tags:
         - '**'
-  pull_request:
-    branches:
-      - '**'
+  workflow_dispatch:
 
 concurrency:
   # SHA is added to the end if on `main` to let all main workflows run
@@ -20,7 +15,7 @@ jobs:
   build:
     name: Linux arm64 DEB Installer
     runs-on: [Linux, ARM64]
-    container: chivesnetwork/ubuntu-18.04-builder:latest
+    container: chianetwork/ubuntu-18.04-builder:latest
     timeout-minutes: 120
     strategy:
       fail-fast: false
@@ -29,10 +24,10 @@ jobs:
         python-version: [3.8]
 
     steps:
-    - uses: Chives-Network/actions/clean-workspace@main
+    - uses: Chia-Network/actions/clean-workspace@main
 
     - name: Add safe git directory
-      uses: Chives-Network/actions/git-mark-workspace-safe@main
+      uses: Chia-Network/actions/git-mark-workspace-safe@main
 
     - name: Checkout Code
       uses: actions/checkout@v3
@@ -40,7 +35,7 @@ jobs:
         fetch-depth: 0
         submodules: recursive
 
-    - uses: Chives-Network/actions/git-ssh-to-https@main
+    - uses: Chia-Network/actions/git-ssh-to-https@main
 
     - name: Cleanup any leftovers that exist from previous runs
       run: bash build_scripts/clean-runner.sh || true
@@ -65,7 +60,7 @@ jobs:
       env:
         SECRET: "${{ secrets.INSTALLER_UPLOAD_SECRET }}"
 
-      # Get the most recent release from chives-plotter-madmax
+      # Get the most recent release from chia-plotter-madmax
     - uses: actions/github-script@v6
       id: 'latest-madmax'
       with:
@@ -73,18 +68,18 @@ jobs:
         result-encoding: string
         script: |
           const release = await github.rest.repos.getLatestRelease({
-            owner: 'Chives-Network',
-            repo: 'chives-plotter-madmax',
+            owner: 'Chia-Network',
+            repo: 'chia-plotter-madmax',
           });
           return release.data.tag_name;
 
     - name: Get latest madmax plotter
       run: |
         mkdir "$GITHUB_WORKSPACE/madmax"
-        wget -O "$GITHUB_WORKSPACE/madmax/chives_plot" https://github.com/HiveProject2021/chives-plotter-madmax/releases/download/${{ steps.latest-madmax.outputs.result }}/chives_plot-${{ steps.latest-madmax.outputs.result }}-arm64
-        wget -O "$GITHUB_WORKSPACE/madmax/chives_plot_k34" https://github.com/HiveProject2021/chives-plotter-madmax/releases/download/${{ steps.latest-madmax.outputs.result }}/chives_plot_k34-${{ steps.latest-madmax.outputs.result }}-arm64
-        chmod +x "$GITHUB_WORKSPACE/madmax/chives_plot"
-        chmod +x "$GITHUB_WORKSPACE/madmax/chives_plot_k34"
+        wget -O "$GITHUB_WORKSPACE/madmax/chia_plot" https://github.com/Chia-Network/chia-plotter-madmax/releases/download/${{ steps.latest-madmax.outputs.result }}/chia_plot-${{ steps.latest-madmax.outputs.result }}-arm64
+        wget -O "$GITHUB_WORKSPACE/madmax/chia_plot_k34" https://github.com/Chia-Network/chia-plotter-madmax/releases/download/${{ steps.latest-madmax.outputs.result }}/chia_plot_k34-${{ steps.latest-madmax.outputs.result }}-arm64
+        chmod +x "$GITHUB_WORKSPACE/madmax/chia_plot"
+        chmod +x "$GITHUB_WORKSPACE/madmax/chia_plot_k34"
 
       # Get the most recent release from bladebit
     - uses: actions/github-script@v6
@@ -94,7 +89,7 @@ jobs:
         result-encoding: string
         script: |
           const release = await github.rest.repos.getLatestRelease({
-            owner: 'Chives-Network',
+            owner: 'Chia-Network',
             repo: 'bladebit',
           });
           return release.data.tag_name;
@@ -102,7 +97,7 @@ jobs:
     - name: Get latest bladebit plotter
       run: |
         mkdir "$GITHUB_WORKSPACE/bladebit"
-        wget -O /tmp/bladebit.tar.gz https://github.com/HiveProject2021/bladebit/releases/download/${{ steps.latest-bladebit.outputs.result }}/bladebit-${{ steps.latest-bladebit.outputs.result }}-ubuntu-arm64.tar.gz
+        wget -O /tmp/bladebit.tar.gz https://github.com/Chia-Network/bladebit/releases/download/${{ steps.latest-bladebit.outputs.result }}/bladebit-${{ steps.latest-bladebit.outputs.result }}-ubuntu-arm64.tar.gz
         tar -xvzf /tmp/bladebit.tar.gz -C $GITHUB_WORKSPACE/bladebit
         chmod +x "$GITHUB_WORKSPACE/bladebit/bladebit"
 
