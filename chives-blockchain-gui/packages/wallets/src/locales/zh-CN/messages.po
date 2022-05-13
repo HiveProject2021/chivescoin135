@@ -114,7 +114,7 @@ msgid "Add Backup ID"
 msgstr "添加备份 ID"
 
 #: src/components/offers/OfferAssetSelector.tsx:127
-msgid "Add Token Wallets to have more options"
+msgid "Add CAT wallets to have more options"
 msgstr ""
 
 #: src/components/hero/WalletHeroAdd.tsx:99
@@ -369,8 +369,8 @@ msgstr ""
 #~ msgstr "Buy"
 
 #: src/constants/WalletName.ts:23
-#~ msgid "Token Wallet"
-#~ msgstr "Token Wallet"
+#~ msgid "CAT Wallet"
+#~ msgstr "CAT Wallet"
 
 #: src/components/wallet/Wallets.tsx:49
 #~ msgid "CC Wallet"
@@ -725,7 +725,7 @@ msgid "Create an offer to exchange XCC or other tokens. View an offer to inspect
 msgstr ""
 
 #: src/components/cat/WalletCATCreateExisting.tsx:75
-msgid "Create custom Token Wallet"
+msgid "Create custom CAT Wallet"
 msgstr ""
 
 #: src/components/_wallet_old/create/WalletCreate.jsx:132
@@ -991,7 +991,7 @@ msgstr ""
 
 #: src/components/WalletImport.tsx:84
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chives wallet."
-msgstr "请输入你保存的24个助记词来恢复韭菜钱包"
+msgstr "请输入你保存的24个助记词来恢复奇亚钱包"
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:104
 #~ msgid "Enter your passphrase:"
@@ -2831,7 +2831,7 @@ msgstr "支出迭代长度(区块数)"
 #: src/components/rateLimited/WalletRateLimited.jsx:400
 #: src/components/rateLimited/WalletRateLimited.jsx:447
 msgid "Spending Limit (chives per interval): {0}"
-msgstr "消费限额（单位时间可消费的韭菜币）：{0}"
+msgstr "消费限额（单位时间可消费的奇亚币）：{0}"
 
 #: src/constants/WalletName.ts:5
 msgid "Standard Wallet"
@@ -3059,7 +3059,7 @@ msgstr ""
 
 #: src/components/standard/WalletStandardCards.tsx:23
 msgid "This is the amount of Chives that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chives that you have just spent but is not yet in the blockchain."
-msgstr "这是你目前可以交易的韭菜币数额。该数额不包含处理中的农场奖励、收入交易，以及未经区块链确认的支付交易。"
+msgstr "这是你目前可以交易的奇亚币数额。该数额不包含处理中的农场奖励、收入交易，以及未经区块链确认的支付交易。"
 
 #: src/components/standard/WalletStandardCards.tsx:44
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -3079,7 +3079,7 @@ msgstr "待处理的收入与支出总和(还未上链). 不包括农场耕种�
 
 #: src/components/standard/WalletStandardCards.tsx:16
 msgid "This is the total amount of chives in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "这里是你的私钥所控制的, 到目前最新子块高度为止的全部韭菜数. 包含被冻结的耕种奖励, 但不包含待处理的收入与支出."
+msgstr "这里是你的私钥所控制的, 到目前最新子块高度为止的全部奇亚数. 包含被冻结的耕种奖励, 但不包含待处理的收入与支出."
 
 #: src/components/standard/WalletStandardCards.tsx:31
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -3522,7 +3522,7 @@ msgstr ""
 
 #: src/components/WalletAdd.tsx:76
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
-msgstr "欢迎使用韭菜! 下面的词语列表是你的钱包密语, 请务必严格完整的把它们记下来(保持顺序). 没有这段密语的话, 你就没办法找回钱包里的币. 千万也不要透露给别人."
+msgstr "欢迎使用奇亚! 下面的词语列表是你的钱包密语, 请务必严格完整的把它们记下来(保持顺序). 没有这段密语的话, 你就没办法找回钱包里的币. 千万也不要透露给别人."
 
 #: src/components/rateLimited/WalletRateLimited.jsx:315
 msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"

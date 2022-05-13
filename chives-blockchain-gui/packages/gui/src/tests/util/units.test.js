@@ -10,12 +10,12 @@ describe('units', () => {
     it('gets unit of mojo', () => {
       const result = units.getUnit('mojo');
 
-      expect(result).toBe(1e-12);
+      expect(result).toBe(1e-8);
     });
     it('gets unit of coloured coin', () => {
       const result = units.getUnit('colouredcoin');
 
-      expect(result).toBe(1e-9);
+      expect(result).toBe(1e-5);
     });
     it('supports uppercase characters', () => {
       const result = units.getUnit('CHIVES');
@@ -30,12 +30,12 @@ describe('units', () => {
     it('gets unit of mojo using alias', () => {
       const result = units.getUnit('mj');
 
-      expect(result).toBe(1e-12);
+      expect(result).toBe(1e-8);
     });
     it('gets unit of coloured coin using alias', () => {
       const result = units.getUnit('cc');
 
-      expect(result).toBe(1e-9);
+      expect(result).toBe(1e-5);
     });
     it('throws an error if unit is not supported', () => {
       try {
@@ -51,7 +51,7 @@ describe('units', () => {
 
       expect(result).toEqual({
         format: '{amount} CH',
-        fractionDigits: 12,
+        fractionDigits: 8,
       });
     });
     it('gets display of mojo', () => {

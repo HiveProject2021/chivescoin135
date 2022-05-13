@@ -124,7 +124,7 @@ function OfferAssetSelector(props: OfferAssetSelectorProps) {
             key={-1}
             onClick={() => {}}
           >
-            <Trans>Add Token Wallets to have more options</Trans>
+            <Trans>Add CAT wallets to have more options</Trans>
           </MenuItem>
         )}
         {options.map((option) => (

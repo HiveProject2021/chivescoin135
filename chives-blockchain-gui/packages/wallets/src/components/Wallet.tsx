@@ -33,7 +33,7 @@ export default function Wallet() {
 
   if (wallet.type === WalletType.CAT) {
     return (
-      <WalletCAT WalletId={Number(walletId)} />
+      <WalletCAT walletId={Number(walletId)} />
     );
   }
 

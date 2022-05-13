@@ -2974,7 +2974,7 @@ msgstr "警告：此密钥用于池奖励地址。删除此密钥可能会无法
 
 #: src/screens/SelectKey/SelectKey.tsx:143
 msgid "Welcome to Chives. Please log in with an existing key, or create a new key."
-msgstr "欢迎来到韭菜。请用已有的密钥登录，或者创建一个新的密钥。"
+msgstr "欢迎来到奇亚。请用已有的密钥登录，或者创建一个新的密钥。"
 
 #: src/components/_wallet_old/WalletAdd.tsx:66
 #~ msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"

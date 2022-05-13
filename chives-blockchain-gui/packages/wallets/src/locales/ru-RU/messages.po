@@ -114,7 +114,7 @@ msgid "Add Backup ID"
 msgstr "Добавить ID резервной копии"
 
 #: src/components/offers/OfferAssetSelector.tsx:127
-msgid "Add Token Wallets to have more options"
+msgid "Add CAT wallets to have more options"
 msgstr ""
 
 #: src/components/hero/WalletHeroAdd.tsx:99
@@ -369,8 +369,8 @@ msgstr ""
 #~ msgstr "Buy"
 
 #: src/constants/WalletName.ts:23
-#~ msgid "Token Wallet"
-#~ msgstr "Token Wallet"
+#~ msgid "CAT Wallet"
+#~ msgstr "CAT Wallet"
 
 #: src/components/wallet/Wallets.tsx:49
 #~ msgid "CC Wallet"
@@ -725,7 +725,7 @@ msgid "Create an offer to exchange XCC or other tokens. View an offer to inspect
 msgstr ""
 
 #: src/components/cat/WalletCATCreateExisting.tsx:75
-msgid "Create custom Token Wallet"
+msgid "Create custom CAT Wallet"
 msgstr ""
 
 #: src/components/_wallet_old/create/WalletCreate.jsx:132

@@ -101,7 +101,7 @@ export default function LayoutDashboard(props: LayoutDashboardProps) {
                       >
                         {({ onClose }) => (
                           <MenuItem onClick={onClose}>
-                            Token Wallet TEST is now available
+                            CAT Wallet TEST is now available
                           </MenuItem>
                         )}
                       </DropdownIconButton>

@@ -126,7 +126,7 @@ export const {
   // Pool
   useCreateNewPoolWalletMutation,
 
-  // Token Wallet hooks
+  // CAT wallet hooks
   useCreateNewCATWalletMutation,
   useCreateCATWalletForExistingMutation,
   useGetCATAssetIdQuery,
