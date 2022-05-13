@@ -246,14 +246,14 @@ class TestOfferLifecycle:
             assert new_offer.get_requested_amounts() == {None: 900, str_to_tail_hash("red"): 350}
             assert new_offer.summary() == (
                 {
-                    "xch": 1000,
+                    "xcc": 1000,
                     str_to_tail_hash("red").hex(): 350,
                     str_to_tail_hash("blue").hex(): 2000,
                 },
-                {"xch": 900, str_to_tail_hash("red").hex(): 350},
+                {"xcc": 900, str_to_tail_hash("red").hex(): 350},
             )
             assert new_offer.get_pending_amounts() == {
-                "xch": 1200,
+                "xcc": 1200,
                 str_to_tail_hash("red").hex(): 350,
                 str_to_tail_hash("blue").hex(): 3000,
             }
