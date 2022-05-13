@@ -1256,7 +1256,7 @@ msgstr "加入農會並獲得持續的 XCC 耕種獎勵。雖然平均報酬一�
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:63
 msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-msgstr "加入農會並獲得持續的XCH 耕種獎勵。雖然平均報酬一樣但波動較小相對穩定。分配耕地到農場。你可以更輕鬆的轉換農會而不用重新進行耕地。"
+msgstr "加入農會並獲得持續的XCC 耕種獎勵。雖然平均報酬一樣但波動較小相對穩定。分配耕地到農場。你可以更輕鬆的轉換農會而不用重新進行耕地。"
 
 #: src/components/plot/add/PlotAddNFT.tsx:138
 msgid "Join a pool and get more consistent XCC farming rewards. Create a plot NFT and assign your new plots to a group."
@@ -2445,7 +2445,7 @@ msgstr "跳過新增最終資料夾到收割機進行耕種"
 
 #: src/components/pool/PoolHero.tsx:21
 msgid "Smooth out your XCC farming rewards by joining a pool."
-msgstr "加入農會來獲得穩定的XCH獎勵。"
+msgstr "加入農會來獲得穩定的XCC獎勵。"
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 #~ msgid "Something went wrong"

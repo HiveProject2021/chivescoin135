@@ -1252,15 +1252,15 @@ msgstr "加入农业合作社"
 
 #: src/components/plot/add/PlotAddNFT.tsx:49
 msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile."
-msgstr "加入农业合作社来获得持续的XCH耕种收益。平均回报是相同的，但是收益会更加稳定。"
+msgstr "加入农业合作社来获得持续的XCC耕种收益。平均回报是相同的，但是收益会更加稳定。"
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:63
 msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-msgstr "加入农业合作社来获得持续的XCH耕种收益。平均回报是相同的，但是收益会更加稳定。为已开垦的农田分配农田NFT。你可以轻松切换耕种池，而不比重新开垦现有农田。"
+msgstr "加入农业合作社来获得持续的XCC耕种收益。平均回报是相同的，但是收益会更加稳定。为已开垦的农田分配农田NFT。你可以轻松切换耕种池，而不比重新开垦现有农田。"
 
 #: src/components/plot/add/PlotAddNFT.tsx:138
 msgid "Join a pool and get more consistent XCC farming rewards. Create a plot NFT and assign your new plots to a group."
-msgstr "加入农业合作社来获得持续的XCH耕种收益。创建一个农田NFT，然后将新农田分配到组。"
+msgstr "加入农业合作社来获得持续的XCC耕种收益。创建一个农田NFT，然后将新农田分配到组。"
 
 #: src/components/app/AppSelectMode.tsx:146
 msgid "Join farming pools"
@@ -1577,7 +1577,7 @@ msgstr "未连接"
 #: src/components/block/FarmManageFarmingRewards.tsx:163
 #: src/components/farm/FarmManageFarmingRewards.tsx:174
 msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the reward for pooling plots."
-msgstr "请注意，这将不会改变你的合作社耕作支付地址。这只会影响旧农田文件，以及0.25XCH的合作社耕作奖励。"
+msgstr "请注意，这将不会改变你的合作社耕作支付地址。这只会影响旧农田文件，以及0.25XCC的合作社耕作奖励。"
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:117
 #: src/components/plotNFT/PlotNFTCard.tsx:158
@@ -2363,7 +2363,7 @@ msgstr "自耕种"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:104
 msgid "Self pool. When you win a block you will earn XCC rewards."
-msgstr "自耕种。一旦发现新区块，你将得到全部XCH区块奖励。"
+msgstr "自耕种。一旦发现新区块，你将得到全部XCC区块奖励。"
 
 #: src/components/trading/CreateOffer.jsx:165
 #: src/components/trading/TradesTable.tsx:46
@@ -2445,7 +2445,7 @@ msgstr "勾选此项，将不会自动把最终目录添加到收割机进行耕
 
 #: src/components/pool/PoolHero.tsx:21
 msgid "Smooth out your XCC farming rewards by joining a pool."
-msgstr "加入农业合作社来稳定XCH耕作收益。"
+msgstr "加入农业合作社来稳定XCC耕作收益。"
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 #~ msgid "Something went wrong"
@@ -2671,7 +2671,7 @@ msgstr "本区块上奖励给农民的全部交易费用。"
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:106
 msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCC address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-msgstr "这是农民耕种奖励的支付方式。默认情况下，这将是一个XCH钱包地址，但是你可以设置任意长度小于1024的字符串，也就是说，你可以指定其它区块链或者支付系统标识。"
+msgstr "这是农民耕种奖励的支付方式。默认情况下，这将是一个XCC钱包地址，但是你可以设置任意长度小于1024的字符串，也就是说，你可以指定其它区块链或者支付系统标识。"
 
 #: src/components/plot/card/PlotCardPlotsFailedToOpen.tsx:15
 msgid "These plots are invalid, you might want to delete them."
