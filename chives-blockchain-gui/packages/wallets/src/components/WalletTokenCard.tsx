@@ -126,7 +126,9 @@ export default function WalletTokenCard(props: WalletTokenCardProps) {
                 </Tooltip>
               )}
               {assetId && (
-                
+                <Link href={`https://www.taildatabase.com/tail/${assetId}`} target="_blank" variant="caption">
+                  <Trans></Trans>
+                </Link>
               )}
             </Flex>
           )}
