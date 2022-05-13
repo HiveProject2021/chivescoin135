@@ -92,7 +92,7 @@ export default function OfferSummaryRow(props: Props) {
               </Box>
               {(!assetIdInfo || assetIdInfo?.walletType === WalletType.CAT) && (
                 <Link href={`https://www.taildatabase.com/tail/${assetId.toLowerCase()}`} target="_blank">
-                  <Trans></Trans>
+                  <Trans>Search on Tail Database</Trans>
                 </Link>
               )}
             </Flex>

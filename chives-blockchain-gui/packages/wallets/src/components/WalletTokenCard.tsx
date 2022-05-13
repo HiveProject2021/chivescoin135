@@ -127,7 +127,7 @@ export default function WalletTokenCard(props: WalletTokenCardProps) {
               )}
               {assetId && (
                 <Link href={`https://www.taildatabase.com/tail/${assetId}`} target="_blank" variant="caption">
-                  <Trans></Trans>
+                  <Trans>Search on Tail Database</Trans>
                 </Link>
               )}
             </Flex>
