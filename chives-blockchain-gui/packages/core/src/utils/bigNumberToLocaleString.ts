@@ -9,7 +9,7 @@ export default function bigNumberToLocaleString(value: BigNumber, locale?: strin
     }
 
     const decimalFormatter = new Intl.NumberFormat(locale, { 
-      maximumFractionDigits: 12,
+      maximumFractionDigits: 8,
     });
     if (!decimalFormatter) {
       throw new Error(`Decimal formatter for ${locale} is not supported`);
