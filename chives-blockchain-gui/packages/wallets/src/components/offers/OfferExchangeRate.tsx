@@ -63,7 +63,7 @@ export default function OfferExchangeRate(props: Props) {
         displayRate = `${rate}`;
       }
       else if (rate && Number.isFinite(rate)) {  // !(NaN or Infinity)
-        const fixed = rate.toFixed(walletType === WalletType.STANDARD_WALLET ? 9 : 12);
+        const fixed = rate.toFixed(walletType === WalletType.STANDARD_WALLET ? 5 : 8);
 
         // remove trailing zeros
         displayRate = fixed.replace(/\.0+$/, '');
@@ -92,7 +92,7 @@ export default function OfferExchangeRate(props: Props) {
             InputProps={{
               inputComponent: OfferExchangeRateNumberFormat as any,
               inputProps: {
-                decimalScale: takerAssetInfo.walletType === WalletType.STANDARD_WALLET ? 12 : 9,
+                decimalScale: takerAssetInfo.walletType === WalletType.STANDARD_WALLET ? 8 : 5,
               },
               endAdornment: <InputAdornment position="end">{takerAssetInfo.displayName}</InputAdornment>,
               readOnly: readOnly,
@@ -118,7 +118,7 @@ export default function OfferExchangeRate(props: Props) {
             InputProps={{
               inputComponent: OfferExchangeRateNumberFormat as any,
               inputProps: {
-                decimalScale: makerAssetInfo.walletType === WalletType.STANDARD_WALLET ? 12 : 9,
+                decimalScale: makerAssetInfo.walletType === WalletType.STANDARD_WALLET ? 8 : 5,
               },
               endAdornment: <InputAdornment position="end">{makerAssetInfo.displayName}</InputAdornment>,
               readOnly: readOnly,

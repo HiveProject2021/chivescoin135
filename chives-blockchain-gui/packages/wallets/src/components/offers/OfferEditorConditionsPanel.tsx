@@ -253,7 +253,7 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
     const amount: number = Number(side === 'taker' ? makerRows[0].amount : takerRows[0].amount);
     const haveAmount: boolean = amount > 0 && Number.isFinite(amount);
     const assetInfo: AssetIdMapEntry | undefined = side === 'maker' ? makerAssetInfo : takerAssetInfo;
-    const newAmount = Number(haveAmount ? rate * amount : updatedExchangeRate).toFixed(assetInfo?.walletType === WalletType.STANDARD_WALLET ? 9 : 12);
+    const newAmount = Number(haveAmount ? rate * amount : updatedExchangeRate).toFixed(assetInfo?.walletType === WalletType.STANDARD_WALLET ? 5 : 8);
     if (side === 'taker') {
       takerUpdate(0, { ...takerRows[0], amount: newAmount });
       if (!haveAmount) {
