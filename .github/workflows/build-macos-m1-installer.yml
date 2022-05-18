@@ -57,6 +57,7 @@ jobs:
           arch -arm64 python3 -m venv ../venv
           . ../venv/bin/activate
           arch -arm64 pip install setuptools_scm
+          arch -arm64 pip install requests
           echo "::set-output name=CHIVES_INSTALLER_VERSION::$(arch -arm64 python3 ./build_scripts/installer-version.py)"
           deactivate
 

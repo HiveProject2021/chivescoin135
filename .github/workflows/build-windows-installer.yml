@@ -95,6 +95,7 @@ jobs:
         python -m venv ..\venv
         . ..\venv\Scripts\Activate.ps1
         pip3 install setuptools_scm
+        pip3 install requests
         $env:CHIVES_INSTALLER_VERSION = python .\build_scripts\installer-version.py -win
         echo "$env:CHIVES_INSTALLER_VERSION"
         echo "::set-output name=CHIVES_INSTALLER_VERSION::$env:CHIVES_INSTALLER_VERSION"

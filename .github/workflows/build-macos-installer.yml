@@ -57,6 +57,7 @@ jobs:
         python3 -m venv ../venv
         . ../venv/bin/activate
         pip install setuptools_scm
+        pip install requests
         echo "::set-output name=CHIVES_INSTALLER_VERSION::$(python3 ./build_scripts/installer-version.py)"
         deactivate
 
