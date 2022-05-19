@@ -2608,8 +2608,8 @@ msgstr "你的塊農連接上的完整節點列在下方。<0>了解更多</0>"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
-msgstr "主網最小要求的大小是 k=32"
+msgid "The minimum required size for mainnet is k=29"
+msgstr "主網最小要求的大小是 k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:45

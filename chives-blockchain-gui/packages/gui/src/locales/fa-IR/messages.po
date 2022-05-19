@@ -2612,7 +2612,7 @@ msgstr "گره کاملی که مزرعه شما به آن متصل است. <0>�
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
+msgid "The minimum required size for mainnet is k=29"
 msgstr "حداقل اندازه مورد نیاز برای شبکه اصلی k = 32 است"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16

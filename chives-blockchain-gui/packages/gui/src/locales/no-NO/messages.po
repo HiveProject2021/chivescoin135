@@ -2608,8 +2608,8 @@ msgstr "Full node som bonden din er koblet til, er nedenfor. <0>Lær mer </0>"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
-msgstr "Minimum nødvendig størrelse for mainnet er k=32"
+msgid "The minimum required size for mainnet is k=29"
+msgstr "Minimum nødvendig størrelse for mainnet er k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:45

@@ -2533,8 +2533,8 @@ msgstr "ה-Full node אליו ה-Farmer מחובר הוא מתחת. <0>למד ע
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
-msgstr "הגודל המינימלי הדרוש עבור mainnet הוא k=32"
+msgid "The minimum required size for mainnet is k=29"
+msgstr "הגודל המינימלי הדרוש עבור mainnet הוא k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:45

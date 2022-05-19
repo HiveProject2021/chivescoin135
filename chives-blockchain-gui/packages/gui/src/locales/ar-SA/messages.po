@@ -2608,8 +2608,8 @@ msgstr "العقدة الكاملة التي تتصل بها المزارع هي
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
-msgstr "الحد الأدنى المطلوب لحجم القطعة هو k=32"
+msgid "The minimum required size for mainnet is k=29"
+msgstr "الحد الأدنى المطلوب لحجم القطعة هو k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:45

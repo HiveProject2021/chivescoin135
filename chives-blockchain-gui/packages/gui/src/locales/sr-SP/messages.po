@@ -2608,7 +2608,7 @@ msgstr "Пуни чвор на ком је повезан фармер је ис
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
+msgid "The minimum required size for mainnet is k=29"
 msgstr "Минимална величина за плот је к=32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16

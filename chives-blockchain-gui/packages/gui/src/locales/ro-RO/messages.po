@@ -2608,7 +2608,7 @@ msgstr "Nodul la care este conectat fermierul tău este mai jos. <0> Află mai m
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
+msgid "The minimum required size for mainnet is k=29"
 msgstr "Dimensiunea minimă necesară pentru mainnet este k = 32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16

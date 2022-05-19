@@ -2780,8 +2780,8 @@ msgstr "Полный узел, к которому подключен ваш ф�
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
-msgstr "Минимальный требуемый размер участка для основной сети равен k=32"
+msgid "The minimum required size for mainnet is k=29"
+msgstr "Минимальный требуемый размер участка для основной сети равен k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:45

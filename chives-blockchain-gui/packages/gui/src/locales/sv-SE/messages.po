@@ -2608,8 +2608,8 @@ msgstr "Den fullständiga nod din odlare är ansluten till är nedan. <0>Läs me
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
-msgstr "Den minsta storlek som krävs för mainnet är k=32"
+msgid "The minimum required size for mainnet is k=29"
+msgstr "Den minsta storlek som krävs för mainnet är k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:45
