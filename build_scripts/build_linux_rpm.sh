@@ -43,6 +43,8 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	exit $LAST_EXIT_CODE
 fi
 
+pip install requests
+
 # Builds CLI only rpm
 CLI_RPM_BASE="chives-blockchain-cli-$CHIVES_INSTALLER_VERSION-1.$REDHAT_PLATFORM"
 mkdir -p "dist/$CLI_RPM_BASE/opt/chives"
