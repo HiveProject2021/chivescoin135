@@ -46,6 +46,7 @@ fi
 # Builds CLI only .deb
 # need j2 for templating the control file
 pip install j2cli
+pip install requests
 CLI_DEB_BASE="chives-blockchain-cli_$CHIVES_INSTALLER_VERSION-1_$PLATFORM"
 mkdir -p "dist/$CLI_DEB_BASE/opt/chives"
 mkdir -p "dist/$CLI_DEB_BASE/usr/bin"

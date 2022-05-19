@@ -31,6 +31,7 @@ python -m venv venv
 python -m pip install --upgrade pip
 pip install wheel pep517
 pip install pywin32
+pip install requests
 pip install pyinstaller==5.0
 
 Write-Output "   ---"
