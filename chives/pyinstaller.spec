@@ -75,11 +75,12 @@ binaries = [
     (
         f"{ROOT}/madmax/chia_plot",
         "madmax"
-    ),
-    (
-        f"{ROOT}/madmax/chia_plot_k34",
-        "madmax"
     )
+#    ,
+#    (
+#        f"{ROOT}/madmax/chia_plot_k34",
+#        "madmax"
+#    )
 ]
 
 if not THIS_IS_MAC:
@@ -118,10 +119,10 @@ if THIS_IS_WINDOWS:
             f"{ROOT}\\madmax\\chia_plot.exe",
             "madmax"
         ),
-        (
-            f"{ROOT}\\madmax\\chia_plot_k34.exe",
-            "madmax"
-        ),
+#        (
+#            f"{ROOT}\\madmax\\chia_plot_k34.exe",
+#            "madmax"
+#        ),
         (
             f"{ROOT}\\bladebit\\bladebit.exe",
             "bladebit"
