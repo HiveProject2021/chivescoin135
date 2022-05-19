@@ -2532,7 +2532,7 @@ msgstr ""
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
+msgid "The minimum required size for mainnet is k=29"
 msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16

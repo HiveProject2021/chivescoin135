@@ -2608,8 +2608,8 @@ msgstr "Поўны вузел, да якога ваш фермер падлуч�
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
-msgstr "Мінімальны дапушчальны памер дзялянкі для асноўнай сетцы (mainnet) — k=32"
+msgid "The minimum required size for mainnet is k=29"
+msgstr "Мінімальны дапушчальны памер дзялянкі для асноўнай сетцы (mainnet) — k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:45

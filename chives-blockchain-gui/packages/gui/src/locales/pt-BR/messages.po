@@ -2608,7 +2608,7 @@ msgstr "O nó completo ao qual seu fazendeiro está conectado está abaixo. <0> 
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
+msgid "The minimum required size for mainnet is k=29"
 msgstr "O tamanho mínimo necessário para mainnet é k = 32"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16

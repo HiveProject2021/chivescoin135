@@ -2532,8 +2532,8 @@ msgstr "โนดที่ผู้ฟาร์มจะเชื่อมต่
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
-msgstr "ขนาดขั้นต่ำที่ต้องการสำหรับ mainnet คือ k=32"
+msgid "The minimum required size for mainnet is k=29"
+msgstr "ขนาดขั้นต่ำที่ต้องการสำหรับ mainnet คือ k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:45

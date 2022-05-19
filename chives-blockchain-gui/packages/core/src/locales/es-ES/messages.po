@@ -2506,8 +2506,8 @@ msgstr "Something went wrong"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-#~ msgid "The minimum required size for mainnet is k=32"
-#~ msgstr "The minimum required size for mainnet is k=32"
+#~ msgid "The minimum required size for mainnet is k=29"
+#~ msgstr "The minimum required size for mainnet is k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:37
 #~ msgid "The node is not synced"

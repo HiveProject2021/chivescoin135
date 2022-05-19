@@ -2608,8 +2608,8 @@ msgstr "El nodo completo al que está conectado su agricultor se encuentra a con
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:47
 #: src/components/plot/add/PlotAddChooseSize.tsx:104
-msgid "The minimum required size for mainnet is k=32"
-msgstr "El tamaño mínimo requerido para mainnet es k=32"
+msgid "The minimum required size for mainnet is k=29"
+msgstr "El tamaño mínimo requerido para mainnet es k=29"
 
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:16
 #: src/components/fullNode/card/FullNodeCardStatus.tsx:45
