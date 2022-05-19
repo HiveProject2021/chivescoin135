@@ -85,7 +85,7 @@ export default function PlotAddForm(props: Props) {
 
   const plotter = plotters[plotterName] ?? defaultPlotter;
   let step = 1;
-  const allowTempDirectorySelection: boolean = plotter.options.haveBladebitOutputDir === false;
+  const allowTempDirectorySelection: boolean = true; // plotter.options.haveBladebitOutputDir === false;
 
 
   const handlePlotterChanged = (newPlotterName: PlotterName) => {
