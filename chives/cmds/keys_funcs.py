@@ -99,6 +99,7 @@ def show_all_keys(show_mnemonic: bool, non_observer_derivation: bool):
         )
         wallet_address: str = encode_puzzle_hash(create_puzzlehash_for_pk(first_wallet_sk.get_g1()), prefix)
         print(f"First wallet address{' (non-observer)' if non_observer_derivation else ''}: {wallet_address}")
+        print(f"=======================:{non_observer_derivation}")
         assert seed is not None
         if show_mnemonic:
             print("Master private key (m):", bytes(sk).hex())
